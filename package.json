@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Fozan3060/AI-Grammer-Fix#readme",
   "dependencies": {
+    "dotenv": "^17.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const fetch = require('node-fetch');
 const cors = require('cors');
@@ -5,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const GEMINI_API_KEY = 'AIzaSyCKQghhg7mpVs9xPc-NNMDBTJiFLsYnRGE'; // <-- Replace with your real key, keep private!
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 app.post('/fix-grammar', async (req, res) => {
