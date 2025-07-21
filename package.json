@@ -1,0 +1,30 @@
+{
+  "name": "ai-grammer-fix",
+  "version": "1.0.0",
+  "description": "This is an chrome extension which corrects the grammer of the text provided using Gemini AI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fozan3060/AI-Grammer-Fix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fozan3060/AI-Grammer-Fix/issues"
+  },
+  "homepage": "https://github.com/Fozan3060/AI-Grammer-Fix#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI Grammar Fix",
+  "version": "0.1.0",
+  "description": "Automatically fix grammar using AI.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "public/icon.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "src/background.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.ts"]
+    }
+  ],
+  "icons": {
+    "16": "public/icon.png",
+    "48": "public/icon.png",
+    "128": "public/icon.png"
+  }
+}
